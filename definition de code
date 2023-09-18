@@ -1,0 +1,28 @@
+code de racoursis de devloppeur:
+  #grille:cela permet d'ouvrire le conteneur en identifant suivant :<div id="grille"></div>
+ !(touche clavier entrer):permet d'ouvire les code de base pour la page HTML(commence le html)
+.classe: permet d'ouvrire la boite suivante:<div class="classe2"></div>
+
+
+CODE CSS:
+
+
+
+ GRIDS  css:
+ -display: grid; : permet de dire que dans  "tel conteneur"(div,section ect) q'uon va crée une grille dedant,pour crée la grille va
+ falloir crée des proprieter qui son crée a l'interieur, le display grids et indispensable a ces proprieter, 
+-font-weight: bold;:-code pour Afficher en plus gros characthére le texte.
+-grid-column-start: numero de la ligne;+grid-column-end:numero de la liggne( permet de demare une grille et de l'arreter sur d'autre boite)
+-align-content: space-evenly; permet de metre des espace entre les boits de la grille
+
+CSS PROPRIETE FLEX BOX:
+display-flex:/*permet de lancer la propriete flex*/ 
+justify-content: center;/*permet de centrer les elements*/
+justify-content: space-around;/*permet d'epacé les elements entree heux */
+
+
+ICONE:aller sur le site https://cdnjs.com/libraries/font-awesome ensuite copier le 1er lien de la bibliotheque Font awesome et incruster le dans le code 
+comme ceci : /<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
+ensuite , dans le bloc ou la ou on veux m'ettre l'icone instaure la balise Cherche l'iconne voulu dans le site :https://fontawesome.com/icons/lock?f=classic&s=solid.
+et voila :) 
+
