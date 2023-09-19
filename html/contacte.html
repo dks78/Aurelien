@@ -3,9 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Se conecter</title>
 </head>
 <body>
-    
+    <form method="get" action="index.html">
+        <h2>Informations de contact</h2>
+        <hr>
+        <fieldset>
+            <legend>Qualité</legend>
+            <div class="boite"  >
+                <label for="name">
+                    <span>Nom&nbsp;: </span>
+                    <strong><span aria-label="required">*</span></strong>
+                    <i class="fa-sharp fa-solid fa-user"></i>
+                </label>
+            </div>        
+            <input type="text" id="name" name="username" required />
+            <div class="boite">
+                <label for="mail">
+                    <span>e-mail&nbsp;:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                    <i class="fa-solid fa-at"></i>
+                </label>
+            </div>
+            <input type="email" id="mail" name="usermail" required />
+            <div class="boite">
+                <label for="pwd">
+                    <span>Mot de passe&nbsp;:</span>
+                    <strong><span aria-label="required">*</span></strong>
+                    <i class="fa-solid fa-lock"></i>
+                </label>
+            </div>
+                <input type="password" id="pwd" name="password" required />  
+            <div class="boite">
+                <button>Envoyer</button> 
+            </div>
+        </fieldset>
+    </form>     
 </body>
 </html>

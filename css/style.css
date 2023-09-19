@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 header{
     display: flex;
     flex-wrap: nowrap;
@@ -11,9 +12,6 @@ header{
     padding: 50px;
     font-family: 'Lobster', cursive;
     font-size: 30px;
-}
-.logo{
-    
 }
 *{
     margin: 0;
@@ -31,4 +29,13 @@ footer{
 }
 p{
     font-weight: 700;
+}
+
+form{
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+form hr{
+    background-color: blueviolet;
 }
