@@ -1,0 +1,22 @@
+body{
+   
+    background-color: black;
+}
+#grille{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    background-color: white;
+    height: 600px;
+}
+header{
+    background-color: blue;
+    grid-column: 1/span 2;
+}
+nav{
+    background-color: aqua;
+}
+footer{
+    background-color: blueviolet;
+    grid-column: 1/span 2;
+}
