@@ -3,51 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <title>Acceuil</title>
+    <title>Document</title>
 </head>
 <body>
-    <div class="contener">
-        <header class="En-tete">
-            <div class="logo"><a href="index.html"><img src="/img/téléchargement.png" alt="bible" width="100px"></a></div>
-            <nav class="navigue">
-                <ul>
-                    <li><a href="index.html" target="_blank">Acceuil</a></li>
-                    <li><a href="/html/projet.html" target="_blank">projet</a></li>
-                    <li><a href="#contacte.html" target="_blank">me contacter</a></li>
-                </ul>
-            </nav>
-        </header>
-        <section class="titre">
-            <div>
-                <h1>Mon porfolio</h1>
-            </div>
-        </section>
-        <section class="contener2">
-            <article class="page">
-                <img src="/img/tigre.jpeg" alt="tigre" width="200px">
-                <h2>Qui sui-je?</h2>
-                <p>
-                    Bonjour,je m'appel aurelien j'ai 25 ans
-                    j'ai commance entant que animateur et mecanicien avant de me lancer dans le
-                    devloppement, je suis un jeune croyan,qui et un but presis dans la vie
-                    et qui a besoin du devloppement web pour y arrive 
-                </p>
-            </article>
-        </section>
-        <footer class="bas">  
-            <div class="logo"><a href="index.html"><img src="/img/téléchargement.png" alt="bible"></a></div>
-            <nav class="navigue">
-                <ul>
-                    <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="/html/projet.html">projet</a></li>
-                    <li><a href="html/contacte.html">me contacter</a></li>
-                </ul>
-            </nav>
-    </footer>
+    <header>
+        <nav class="wrapper">
+            <ul>
+                <li>
+                    <a href="#" target="_blank" title="acceuil">acceuil</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="projet">projet</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="" target="_blank" title="qui je suis">ou je vis</a>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" title="qui je suis">qui je suis</a>
+                        </li>
+                        <li>
+                            <a href="index2.html" target="_blank" title="qui je suis">mais photo</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank" title="mes coordone">mes coordoner</a>             
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" target="_blank" title="projet">contacter moi</a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#" target="_blank" title="mes coordone">mes coordoner</a>             
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>     
+    </header>
+    <div class="titre">
+        <h1>Mon porfolio</h1>
     </div>
+    <article class="moi">
+        
+        <p>
+            <h2 class="presente">Qui suis-je</h2>
+            Bonjours a tous , je me présente Aurélien j'ai 25ans , j'ai travailler  dans les domaine suivant:
+            <ul class="mais-boulot">
+                <li>Annimation dans les ecoles primaire et martenelle mais egalement en colonie de vacance</li>
+                <li>en mecanique automobile</li>
+                <li>mais egalement dans un lidle en employer polyvalent</li>
+            </ul>
+           je me suis tourné vers l'informatique car j'ai un but a accomplire , oui je suis un jeune chretien et
+           j'ai un projet a elabore , j'aurai meme dit un but final a accomplire.      
+    </article>
+    <article class="passion">
+        <div class="projet">
+            <img  class="mecaimg"    src="/img/MECANIQUE.jpg" alt="animation">
+            <h2>mecanique</h2>
+            <p>
+                j'ai ettait aprentie mecanique en alternance pendant 1 ans
+                mais ce n'était pas mon avenir,j'ai appris les base
+                le fonctionement d'un moter et egalement et a fair des revisons ;
+                changer les pneux,control de base sur vehicul,
+                j'ai travailler chez renault a guyencour.
+            </p>
+        </div> 
+        <div class="projet">
+            <img class="mecaimg"src="/img/animation.jpg" alt="jouet">
+            <h2>Animation</h2>
+            <p>J'ai etait animateur pendant 2 ans sa était vraiment un bonnheur,
+                toujour un plaisir de s'occuper des enfant,fair des activité 
+                sportif ou manuel,j'ai aussi fait des colonie de vacance,
+                j'ai travailler avec des efant et des ados (2 a 17 ans)
+            </p>
+        </div>
+    </article>   
+    <footer>
+        <form method="get" action="#">
+            <h2>Contacter moi:</h2>
+            <hr>
+            <fieldset>
+                <legend>Qualité</legend>
+                <div class="boite">
+                    <label for="name">
+                        <span>Nom&nbsp;: </span>
+                        <strong><span aria-label="required">*</span></strong>
+                        <i class="fa-sharp fa-solid fa-user"></i>
+                    </label>
+                </div>        
+                <input type="text" id="name" name="username" required />
+                <div class="boite">
+                    <label for="mail">
+                        <span>e-mail&nbsp;:</span>
+                        <strong><span aria-label="required">*</span></strong>
+                        <i class="fa-solid fa-at"></i>
+                    </label>
+                </div>
+                <input type="email" id="mail" name="usermail" required />
+                <div class="boite">
+                    <label for="phone">
+                        <span>numero de telephone&nbsp;:</span>
+                        <strong><span aria-label="required">*</span></strong>
+                        <i class="fa-solid fa-lock"></i>
+                    </label>
+                </div>
+                    <input type="phone" id="phone" name="phone" required />                         
+            </fieldset>
+        </form>  
+    </footer>
 </body>
 </html>
