@@ -1,5 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
 
+/* Dark mode pour les écrans de moins de 600px de large */
+@media (max-width: 600px) {
+    body {
+        background-color: lightslategray; /* Couleur de fond sombre */
+        color: #fff; /* Couleur du texte en mode sombre */
+    }
+}
+@media (min-width: 600px){
+    body{
+        background-color: #1F2039;
+        color: white;
+    }
+}
+@media screen and (max-width: 600px) {
+     .titre{
+     
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper a {
+    
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .moi{
+      
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .projet{
+      
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    form{
+      
+      width: 100%;
+    }
+}
 *{
     box-sizing: border-box;
     margin: 0%;
@@ -44,7 +87,6 @@ position: absolute;
 .sub-menu{
     display: none;
     position: absolute;
-  
     width: 200px;
 }
 .sub-menu li{
@@ -73,9 +115,6 @@ position: absolute;
 }
 .photo{
     border-radius: 50%;
-}
-body{
-    background-color: #1F2039;
 }
 .presente{
     padding: 30px;
@@ -108,7 +147,6 @@ body{
     height:200px;
     margin: 0 20px 5px 0px;
     padding: 20px;
- 
 }
 footer{
    background-color: white;
