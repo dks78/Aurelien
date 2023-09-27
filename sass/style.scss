@@ -1,0 +1,15 @@
+$main-color:red;
+$secondary-color: yellow;
+$random-color: rgb(random(255), random(255) ,random(255));
+$largeur: 1440;
+
+@function fois2($nb){
+    $resultat: 
+}
+
+P{
+    background-color: $random-color;
+}
+h1{
+    text-decoration-color: $secondary-color;
+}
