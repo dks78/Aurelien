@@ -12,37 +12,28 @@
         background-color: #1F2039;
         color: white;
     }
-}
-@media screen and (max-width: 600px) {
-     .titre{
+    .titre{
      
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .wrapper a {
+        width: 100%;
+      }
+      form{
+      
+        width: 100%;
+      }
+      .projet{
+      
+        width: 100%;
+      }
+      .moi{
+      
+        width: 100%;
+      }
+      .wrapper a {
     
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .moi{
-      
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .projet{
-      
-      width: 100%;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    form{
-      
-      width: 100%;
-    }
+        width: 100%;
+      }
 }
+
 *{
     box-sizing: border-box;
     margin: 0%;
@@ -52,6 +43,8 @@ body{
     font-family:Arial,sans-serif ;
     font-size: 16px;
     line-height: 22px;
+   
+   
 }
 a {
     text-decoration: none;
@@ -97,7 +90,7 @@ position: absolute;
     color: green;
 }
 .titre{
-   background-image: url(/img/pexels-photo.jpg);
+    background-image: url(/img/pexels-photo.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -108,10 +101,10 @@ position: absolute;
     text-align: center;
 }
 .moi{
-   max-width: 600px;
-   margin: auto;
-   padding: 30px;  
-   color: white;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;  
+    color: white;
 }
 .photo{
     border-radius: 50%;
@@ -151,4 +144,94 @@ position: absolute;
 footer{
    background-color: white;
    padding: 50px;
+}
+
+.bas{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.titre2{
+    padding: 50px;
+}
+.photo {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+
+}
+img{
+    border-radius: 3px;
+}
+.orque{
+    filter: grayscale(100%);
+}
+.haut{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px;
+    background-color: white;
+ }
+
+form{
+ 
+}
+form .titre3{
+    font-size: 20px;
+}
+form .corp-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corp-formulaire .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corp-formulaire .gauche .boite input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid blue;
+    outline-color: red;
+    border-radius: 5px;
+}
+form .separation{
+width: 100%;
+height: 1px;
+background-color: violet;
+
+}
+form .corp-formulaire .gauche .boite  i{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    padding: 9px 8px;
+    color:#1F2039 ;
+
+} 
+
+form {
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+form .corp-formulaire .droite{
+    margin-left: 40px;
+
+}
+form .corp-formulaire .droite .boite textarea{
+    margin-top: 5px;
+    padding: 50px;
 }

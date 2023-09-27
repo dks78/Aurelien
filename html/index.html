@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
@@ -12,7 +13,7 @@
         <nav class="wrapper">
             <ul>
                 <li>
-                    <a href="#" target="_blank" title="acceuil">acceuil</a>
+                    <a href="index.html" target="_blank" title="acceuil">acceuil</a>
                 </li>
                 <li>
                     <a href="#" target="_blank" title="projet">projet</a>
@@ -24,29 +25,22 @@
                             <a href="" target="_blank" title="qui je suis">qui je suis</a>
                         </li>
                         <li>
-                            <a href="index2.html" target="_blank" title="qui je suis">mais photo</a>
+                            <a href="index2.html" title="qui je suis">mais photo</a>
                         </li>
                         <li>
-                            <a href="#" target="_blank" title="mes coordone">mes coordoner</a>             
+                            <a href="contacte.html" target="_blank" title="mes coordone">laissez-moi vos coordoner</a>             
                         </li>
                     </ul>
                 </li>
-                <li>
-                    <a href="#" target="_blank" title="projet">contacter moi</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="#" target="_blank" title="mes coordone">mes coordoner</a>             
-                        </li>
-                    </ul>
-                </li>
+                
             </ul>
         </nav>     
     </header>
+    
     <div class="titre">
         <h1>Mon porfolio</h1>
     </div>
     <article class="moi">
-        
         <p>
             <h2 class="presente">Qui suis-je</h2>
             Bonjours a tous , je me présente Aurélien j'ai 25ans , j'ai travailler  dans les domaine suivant:
@@ -55,12 +49,13 @@
                 <li>en mecanique automobile</li>
                 <li>mais egalement dans un lidle en employer polyvalent</li>
             </ul>
-           je me suis tourné vers l'informatique car j'ai un but a accomplire , oui je suis un jeune chretien et
-           j'ai un projet a elabore , j'aurai meme dit un but final a accomplire.      
+            je me suis tourné vers l'informatique car j'ai un but a accomplire , oui je suis un jeune chretien et
+            j'ai un projet a elabore , j'aurai meme dit un but final a accomplire.    
+        </p>
     </article>
     <article class="passion">
         <div class="projet">
-            <img  class="mecaimg"    src="/img/MECANIQUE.jpg" alt="animation">
+            <img  class="mecaimg" src="/img/MECANIQUE.jpg" alt="animation">
             <h2>mecanique</h2>
             <p>
                 j'ai ettait aprentie mecanique en alternance pendant 1 ans
@@ -79,39 +74,59 @@
                 j'ai travailler avec des efant et des ados (2 a 17 ans)
             </p>
         </div>
-    </article>   
+    </article>
+    <article class="haut">
+        <h1>Mais photo</h1>
+    </article>
+    <article class="haut">
+        <img src="/img/loup.jpeg" alt="orque" width="250px">
+        <img src="/img/tigre.jpeg" alt="orque" width="250px">
+        <img src="/img/skynews-lions-resting-male_6155518.jpg" alt="orque" width="250px">
+    </article>
+    <article class="haut">
+        <img src="/img/R.jpg" alt="orque" width="250px">       
+        <img src="/img/dauphin.jpg" alt="orque" width="250px">
+        <img src="/img/requins.jpg" alt="orque" width="250px">
+    </article> 
+
+
+    <form>
+    <h3 class="titre3">Contactez-moi</h3>
+    <div class="separation"></div>
+    <div class="corp-formulaire">
+        <div class="gauche">
+            <div class="boite">
+                <label>votre prenom</label>
+                <input type="text">
+                <i class="fa-sharp fa-solid fa-user"></i>
+            </div>
+            <div class="boite">  
+                <label>votre adresse mail</label>
+                <input type="text">
+                <i class="fa-solid fa-at"></i>
+            </div>
+            <div class="boite">  
+                <label>votre téléphone</label>
+                <input type="text">
+                <i class="fa-sharp fa-solid fa-phone"></i>
+            </div>   
+        </div>
+        <div class="droite">
+            <div class="boite">
+                <label>message</label>
+                <textarea></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="pied-formulaire">
+        <button>Envoyer</button>
+    </div>
+</form>
     <footer>
-        <form method="get" action="#">
-            <h2>Contacter moi:</h2>
-            <hr>
-            <fieldset>
-                <legend>Qualité</legend>
-                <div class="boite">
-                    <label for="name">
-                        <span>Nom&nbsp;: </span>
-                        <strong><span aria-label="required">*</span></strong>
-                        <i class="fa-sharp fa-solid fa-user"></i>
-                    </label>
-                </div>        
-                <input type="text" id="name" name="username" required />
-                <div class="boite">
-                    <label for="mail">
-                        <span>e-mail&nbsp;:</span>
-                        <strong><span aria-label="required">*</span></strong>
-                        <i class="fa-solid fa-at"></i>
-                    </label>
-                </div>
-                <input type="email" id="mail" name="usermail" required />
-                <div class="boite">
-                    <label for="phone">
-                        <span>numero de telephone&nbsp;:</span>
-                        <strong><span aria-label="required">*</span></strong>
-                        <i class="fa-solid fa-lock"></i>
-                    </label>
-                </div>
-                    <input type="phone" id="phone" name="phone" required />                         
-            </fieldset>
-        </form>  
+        <div class="bas">
+            <p>@2023-2024</p>
+            <p>Aurélien mestry</p>
+        </div>
     </footer>
 </body>
 </html>

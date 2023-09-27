@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+header{
+    background-color: white;
+    border-bottom: 1px solid #eee ;
+}
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+header li a{
+    display: block;
+    padding: 20px;
+}
+header li:hover a{
+    background-color: green;
+    color: white;
+  
+}
+header li:hover .sub-menu{
+display: block;
+position: absolute;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    width: 200px;
+}
+.sub-menu li{
+    display: block;
+}
+.sub-menu li:hover a{
+    background-color: white;
+    color: green;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+ }
+ *{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    color:#333;
+    font-family:Arial,sans-serif ;
+    font-size: 16px;
+    line-height: 22px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}
+.titre{
+    background-image: url(/img/pexels-photo.jpg);
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     background-attachment: fixed;
+     padding: 200px;
+     color: red;
+     font-weight: 900;
+     text-align: center;
+ }

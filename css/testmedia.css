@@ -1,0 +1,11 @@
+
+P{
+    color: blue;
+}
+@media screen and (max-width:1024px){
+    P{
+        color: red;
+        background-color: black;
+        font-size: 1.2em;
+    }
+}

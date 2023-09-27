@@ -46,7 +46,8 @@ ecttttt: <!--se son les titres ! le h1 et le plus important celui qui apparaitra
 <strong></strong><!--:permet de metre le texte en gras-->
 <mar></mar><!--:surligne-->
   <em></em><!--:italique-->
-  <h2  id="mon-encre">dffddfdffddfdffddfdf</h2> + <a href="#mon-encre">gree</a>:utiliser un lien pour se diriger sur la meme page
+  <h2  id="mon-encre">dffddfdffddfdffddfdf</h2> + <a href="#mon-encre">gree</a>
+  :utiliser un lien pour se diriger sur la meme page
  <figure></figure><!--permet d'indiquer q'une ilage vien enrichir un exte-->
 <a:hover>:<!--permet de ouvrir un lien-->
   <ul>
@@ -56,13 +57,83 @@ ecttttt: <!--se son les titres ! le h1 et le plus important celui qui apparaitra
   <li></li>
 </ol>:<!--permet d'ouvrir une liste ordonnés et normale-->
 
+CONSTRUIRE UN TABLEAU:
 
+<Table>
+  <caption></caption><!--Titre du tableau-->
+  <thead>
+    <tr>
+      <th></th><!--en tete-->
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tfoot>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tfoot>
+</Table>
+<td colspan="2"></td><!--fusion des colonnes horizontale-->
+<td rowspan=""></td><!--fusion des colonne verticale-->
+
+CONSTRUIRE UN FORMULAIRE:
+
+
+<form action="#.php">
+  <p>
+    <label>votre pseaudo</label> : <input type="text" name="pseaudo" id="pseaudo"
+    placeholder="ex: zozo" size="30" maxlength="10" /> 
+    <br>
+    <label for="pass">votre mot de passe :</label>
+    <input type="password" name="pass" id="pass" />
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+  </p>
+</form>
+
+<input type="checkbox" name="" id="">
+<input type="password" name="" id="">
+<input type="number" name="" id="">
+<input type="tel" name="" id="">
+<input type="email" name="" id="">
+<input type="month" name="" id="">
+<input type="radio" name="" id="">
+<input type="button" value="envoyer">
+<input type="submit" name="" id="" >
+<input type="image" name="" id="">
+<input type="reset" name="" id="" required />
+<input type="" name="" id="" autofocus />
+<textarea name="" id="" cols="30" rows="10"></textarea>
+<label for=""></label>
+<fieldset></fieldset>
+<form action=""></form>
+
+LISTE DEROULANTE SENSE FORMULAIRE:
+<select name="" id="">
+  <option value=""></option>
+  <option value=""></option>
+  <OPTgroup label="">
+    <option></OPTION>
+  </OPTgroup>
+</select>
 
 CODE CSS:
 
 filter: grayscale(100%);<!--permet de m'ettre l'image en noir et blanc-->
 
-
+LES FORMATS AUDIO:
+MP3
+AAC
+OGG
+WAV
 
 
 
@@ -72,25 +143,144 @@ display flex: <!--peremet de l'ancer  le flex-->
 justify-content: center;:<!--permet de centrer les elements*/-->
 justify-content: space-around:<!--permet d'epacé les elements entree heux -->
 
+display: flex;
+align-items: flex-start;
+flex-wrap: wrap;<!--permet de metre 2element en haut et 2 en dessous en etait separé  -->
 
-ICONE:aller sur le site https://cdnjs.com/libraries/font-awesome ensuite copier le 1er lien de la bibliotheque Font awesome et incruster le dans le code 
-comme ceci :<!-- /<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />"
-ensuite , dans le bloc ou la ou on veux m'ettre l'icone instaure la balise Cherche l'iconne voulu dans le site :https://fontawesome.com/icons/lock?f=classic&s=solid.
+display: flex;
+flex-direction: row;<!--permet d'affiche les element les un a cote de l'autre ,
+   le contener sera en ligne vertical-->
+
+display: flex;
+flex-direction: column;
+  <!--permet d'afficher les elements l'un en dessous de l'auutre en ligne  horizontal-->
+
+
+display: flex;
+align-items: flex-start;
+flex-wrap: nowrap;<!--permet d'affichez les élements l'un a coté de l'autre sur la meme ligne -->
+ 
+  display: flex;
+  flex-flow: column wrap;<!--permet d'aficher ceciis:
+                            1  3    
+                            2  4 -->
+
+display: flex;
+justify-content: flex-start;<!--permet d'afficher:
+                                ....
+                                ....
+                                ....
+                                1234
+                                ....
+                                ....
+                                ....  a gauche de  la page -->
+display: flex;
+justify-content:flex-end;<!--permet d'afficher:
+                                ....
+                                ....
+                                ....
+                                1234
+                                ....
+                                ....
+                                ....  a droite de  la page -->
+                                display: flex;
+justify-content:flex-end;<!--permet d'afficher:
+                                ....
+                                ....
+                                ....
+                                1234
+                                ....
+                                ....
+                                ....  a centre de  la page -->
+display: flex;
+justify-content:sapce-betwen;<!--permet d'afficher:
+                                .  .  .  .
+                                .  .  .  .
+                                .  .  .  .
+                                1  2  3  4
+                                .  .  .  .
+                                .  .  .  .
+                                .  .  .  .  a mettant des espace entre les elements  de  la page -->
+justify-content:
+
+
+Aling-items:flex-start : Les éléments s'alignent au haut du conteneur.
+Aling-items:flex-end : Les éléments s'alignent au bas du conteneur.
+Aling-items:center : Les éléments s'alignent au centre vertical du conteneur.
+Aling-items:baseline : Les éléments s'alignent à la ligne de base du conteneur.
+Aling-items:stretch : Les éléments sont étirés pour s'adapter au conteneur.
+
+flex-direction:row : Les éléments sont disposés dans la même direction que le texte.
+flex-direction:row-reverse : Les éléments sont disposés dans la direction opposée au texte.
+flex-direction:column : Les éléments sont disposés de haut en bas.
+flex-direction:column-reverse : Les éléments sont disposés de bas en haut.
+
+flex-wrap: wrap;:permet de metre les elemnts a la ligne quand on reduit le telehpone
+
+Une autre propriété que vous pouvez appliquer sur des éléments individuels est align-self.
+ Cette propriété accepte les mêmes valeurs que align-items,
+ mais s'applique seulement à l'élément ciblé.
+
+ .element:nth-child(2){
+  align-self: flex-start;
+}
+RESPONSIVE DESIGN AVEC KES MEDIA QUERIES
+  LES MEDIA QUERIES:
+
+  metre en place des media queries 
+
+  APLIQUER UNE MEDIA QUERIES
+
+iL existe de nombreuses régles our construire des media queries,
+les regles disponible:
+ù.les régles peuveut étre combinées a l'aide des mots suivants :
+
+.only
+and
+not
+
+quelques exemples:
+
+@media sreen and (max widht 1280px)
+
+sur les téléviseurs
+@media tv
+
+@media all and (orientation: portrait)
+
+
+
+ICONE:aller sur le site https://cdnjs.com/libraries/font-awesome ensuite
+ copier le 1er lien de la bibliotheque Font awesome et incruster le dans le code 
+comme ceci :<!-- /<link rel="stylesheet" href="https://cdnjs.cloudflare.
+  com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+   integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />"
+ensuite , dans le bloc ou la ou on veux m'ettre l'icone
+ instaure la balise Cherche l'iconne voulu dans le site
+  :https://fontawesome.com/icons/lock?f=classic&s=solid.
 et voila :)-->
-
+GRILLE CSS:
+lE modéle de grills est un modéle bidimensuionnel , ce qui va nous permettre de placer nos éléments
 
 
 GRIDS  css:
--display: grid; : permet de dire que dans  "tel conteneur"(div,section ect) q'uon va crée une grille dedant,pour crée la grille va
+-display: grid; : permet de dire que dans  "tel conteneur"(div,section ect) q'uon va crée une grille
+ dedant,pour crée la grille va
 falloir crée des proprieter qui son crée a l'interieur, le display grids et indispensable a ces proprieter, 
 -font-weight: bold;:-code pour Afficher en plus gros characthére le texte.
--grid-column-start: numero de la ligne;+grid-column-end:numero de la liggne( permet de demare une grille et de l'arreter sur d'autre boite)
+-grid-column-start: numero de la ligne;+grid-column-end:numero de la liggne( permet de demare 
+une grille et de l'arreter sur d'autre boite)
 -align-content: space-evenly; permet de metre des espace entre les boits de la grille
+
+
 
 code de racoursis de devloppeur:
   #grille:cela permet d'ouvrire le conteneur en identifant suivant :<div id="grille"></div>
  !(touche clavier entrer):permet d'ouvire les code de base pour la page HTML(commence le html)
 .classe: permet d'ouvrire la boite suivante:<div class="classe2"></div>
+
+
 
 HTML:
 QUIZ1:Quizz : structurer une page HTML:
@@ -130,3 +320,670 @@ L'attribut for spécifie l'élément de formulaire (par son attribut id) auquel 
 
 6.Que signifie la balise : meta name=”viewport” content=”width=device-width, initial-scale=1″
 Rend automatiquement un site Web responsive
+
+
+
+Media queries
+Les media queries permettent de modifier la mise en page en fonction de la taille du viewport.
+Ce que nous appelons viewport est la taille de la fenêtre.
+
+En utilisant les media queries, tu peux décider de réorganiser certains éléments de ta page web en 
+fonction de la taille de la fenêtre.
+
+
+Les media queries permettent de modifier la mise en page en fonction de la taille du viewport.
+Ce que nous appelons viewport est la taille de la fenêtre.
+
+En utilisant les media queries, tu peux décider de réorganiser certains éléments de ta page web en 
+fonction de la taille de la fenêtre.
+
+La syntaxe d’une media query ressemble à ceci :
+
+@media <media_type> and (<media_features>){}
+
+Le <media_type> décrit la catégorie d’appareil. Voici une liste des différents types de 
+  media que tu peux utiliser :
+
+
+  Types de media
+Le <media_type> décrit la catégorie d’appareil. Voici une liste des différents types de media 
+  que tu peux utiliser :
+
+all
+Tu peux utiliser all pour appliquer la règle à tous les types d’appareils.
+
+print
+Utilisé pour un document destiné à être imprimé (papier)
+
+screen
+Utilisé pour tous les types d’écran.
+
+speech
+Pour les synthétiseurs de parole
+
+Le plus utilisé est généralement screen.
+
+Caractéristiques media
+Ensuite, à la place de <media_features>, tu peux écrire des règles pour lesquelles la media query sera appliquée.
+Les features les plus courantes sont la largeur minimale min-width et la largeur maximale max-width.
+
+Tu peux trouver une liste complète sur le site w3schools :
+
+CSS @media Rule
+Tu trouveras ici la définition et les règles d'utilisation des media queries
+https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+Voici un exemple de media queries avec toutes les propriétés :
+
+1@media screen and (max-width: 600px) { 
+2  .menu { 
+3    display: none; 
+4  } 
+5}
+Cette media query vérifie si la page web est affichée sur un écran, et si la largeur 
+de la fenêtre de visualisation est inférieure à 600px.
+Si la condition est vraie, alors la règle CSS est appliquée et l’élément .menu change en display : none.
+
+Points de rupture
+Dans la responsive design, un point de rupture (ou breakpoint) est un point auquel la
+ media query se déclenche (et la mise en page s’adapte). Dans l’exemple précédent, 
+ tu as utilisé 600px comme point de rupture.
+
+Nous ne voulons pas que les éléments changent tout le temps pour un grand nombre d’écrans différents.
+Ton site web ne devrait changer que sur les points d’arrêt principaux 
+(ex : lorsque le site passe d’un écran de bureau à la tablette, etc.)
+
+Voici les tailles d’écran les plus utilisées :
+
+Mobile en portrait (320px à 414px) – Pour les appareils avec des écrans de 4″ à 6,9″.
+Mobile en paysage (568px à 812px) – Idem, mais en paysage.
+Tablette en portrait (768px à 834px) – Pour les appareils de 7″ à 10″.
+Tablette en paysage (1024px à 1112px) – Idem, mais aussi tablettes 12″ en portrait.
+Ecrans d’ordinateurs portables et de bureau (>1200px) – Varie beaucoup, mais généralement de 1200px et plus.
+
+Images
+Un autre concept important en responsive design est celui des images.
+Nous voulons aussi que les images s’adaptent à la taille de l’écran.
+
+Nous pouvons utiliser ce code pour nous assurer que l’élément image ne prend pas plus de 100% de la 
+taille du parent :
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+Quizz : Responsive Design & Media Queries
+1.Qu’est-ce que le responsive design ?
+Il fait référence à un ensemble d'outils 
+et de pratiques pour créer des mises en page qui s'adaptent à la taille des écrans
+
+2.Qu’est-ce que le concept du “Mobile First” ?
+Il s'agit de toujours commencer à développer sur la version mobile avant de construire la version bureau
+
+3.Plus de 60% de la population navigue sur internet à partir d’un appareil de bureau ?
+False
+
+Explanation:
+4.Quel est l’intérêt d’avoir une bonne version mobile ?
+Améliorer la visibilité sur les moteurs de recherche
+
+
+
+Quand utiliser quelles unités en CSS
+Mis à jour le 07 juin 2020
+
+Lorsque j’ai commencé à créer des sites Web, il y a environ 10 ans,
+ je n’utilisais que des pixels. Les pourcentages étaient réservés uniquement aux occasions audacieuses.
+
+Maintenant, je me retrouve à utiliser une combinaison de pixels, 
+pourcentages, ems, rems, vh, vw et valeurs sans unité. Cela semble insensé, mais il y a une logique
+ derrière cette folie.
+
+Pixels
+Les pixels sont devenus des spectateurs. La seule fois où j'utilise
+ des pixels, c'est lorsque je dois dire au navigateur de donner à un élément une taille exacte.
+  Le bon cas d’utilisation est celui des frontières. L'utilisation de largeurs relatives pour les
+   bordures peut signifier qu'elles sont inégales et floues. En effet, le navigateur fait de son 
+   mieux pour convertir une mesure relative en pixels. Déclarer une valeur de pixel garantit
+    qu'ils ont l'air bien rangés.
+
+Pourcentages
+J'utilise des pourcentages à deux endroits.
+
+La première consiste à déclarer la taille de la police sur la balise 
+HTML. Il s'agit de la taille de police de base pour définir toutes les autres polices.
+ Je n'utilise pas de pourcentages pour les autres tailles de police. Au lieu de cela, 
+ j'ai choisi d'utiliser les ems car ils aident à mettre à l'échelle d'autres attributs CSS, 
+ plus d'informations à ce sujet ici.
+
+Le deuxième endroit où j'utilise les pourcentages concerne le dimensionnement horizontal.
+ L'exemple classique concerne les largeurs de colonnes pour les grilles.
+  Nous voulons que ceux-ci soient complètement fluides pour le navigateur des 
+  utilisateurs afin que les pourcentages fonctionnent bien.
+
+Ems
+Si vous n'êtes pas familier avec les ems, ou même si vous l'êtes, je vous 
+recommande de lire mon article à leur sujet . Cela vous aidera à comprendre
+ mon processus de réflexion derrière leur utilisation.
+
+J'utilise beaucoup les ems. Pour toutes les tailles de police et la plupart
+ des remplissages et marges. C'est parce qu'il évolue avec la taille de la 
+ police. Un bon exemple est le remplissage des boutons et des icônes situés à côté du texte.
+
+Ma règle générale est que si les marges ou les remplissages sont liés à
+ cet élément, ils devraient être des ems. S'ils sont de taille globale,
+  ils devraient être rems.
+
+Rems
+Les rems sont comme les ems, mais ils utilisent uniquement la taille
+ de la police de la balise HTML pour évoluer, plutôt que leurs parents. Les rems sont utiles pour
+  les éléments que vous souhaitez conserver constants sur le site Web, quel que soit son contenu.
+
+La seule fois où j'utilise rems, c'est pour l'espacement global entre 
+les sections. Cela peut être vertical ou horizontal. Cela aide à créer
+ une apparence cohérente sur un site Web.
+
+vh et vw
+Vh et vw signifient la hauteur et la largeur de la fenêtre. Ils 
+vous permettent d'appliquer des hauteurs aux éléments en fonction de la taille du navigateur. 
+Je les utilise rarement car on souhaite généralement que les éléments s'adaptent à leur contenu.
+
+Les seules fois où je les ai utilisés, c'est pour la vidéo plein écran et les superpositions.
+ C'est un moyen simple de s'assurer que l'élément remplit tout l'écran.
+
+Un mot d'avertissement. iOS et Android calculent vh à partir de la hauteur du navigateur
+ hors barre d'adresse. Cela signifie que lorsque vous visitez la page pour la première fois, 
+ avant de faire défiler, l'élément apparaîtra plus grand que prévu. Lorsque vous faites défiler
+  la hauteur est corrigée car la barre d'adresse disparaît. Plus d'informations à ce sujet ici .
+
+Sans unité
+La dernière unité est, eh bien, sans unité. Je ne les
+ utilise que pour les hauteurs de lignes. Il est recommandé de ne pas ajouter d'unités aux hauteurs de ligne,
+  car les éléments enfants héritent de la valeur numérique brute plutôt que de celle calculée.
+   L'ajout d'unités aux hauteurs de ligne signifie souvent que vous devrez les remplacer
+    à chaque fois que vous modifiez la taille de la police.
+
+Je serais intéressé de savoir comment d'autres
+ utilisent les unités lors de la création de leur site Web. 
+ Ou, si vous pensez qu’il existe une meilleure façon de faire quelque chose, faites-le-moi savoir !
+
+
+
+ Valeurs et unités CSS
+Précédent
+Présentation : éléments de base
+Suivant
+Les règles CSS contiennent des déclarations , elles-mêmes composées de propriétés et de valeurs.
+ Chaque propriété utilisée en CSS a un type de valeur qui décrit le type de valeurs qu'elle est
+  autorisée à avoir.
+  Dans cette leçon, nous examinerons certains des types de valeur les plus fréquemment utilisés,
+   ce qu'ils sont et comment ils fonctionnent.
+
+Remarque : Chaque page de propriétés CSS comporte une section de syntaxe qui répertorie 
+les types de valeur que vous pouvez utiliser avec cette propriété.
+
+Conditions préalables:	Connaissances informatiques de base, logiciels de base installés ,
+ connaissances de base du travail avec des fichiers , bases du HTML (étude Introduction au HTML )
+  et une idée du fonctionnement du CSS (étude des premiers pas du CSS ).
+Objectif:	Pour en savoir plus sur les différents types de valeurs et d'unités utilisés dans les propriétés CSS.
+Qu'est-ce qu'une valeur CSS ?
+Dans les spécifications CSS et sur les pages de propriétés ici sur MDN, vous pourrez repérer les types de valeurs car ils seront entourés de crochets angulaires, tels que <color>ou <length>. Lorsque vous voyez le type de valeur <color>comme valide pour une propriété particulière, cela signifie que vous pouvez utiliser n'importe quelle couleur valide comme valeur pour cette propriété, comme indiqué sur la <color>page de référence.
+
+Remarque : Vous verrez des types de valeurs CSS appelés types de données . Les termes sont fondamentalement interchangeables : lorsque vous voyez quelque chose en CSS appelé type de données, il s'agit en réalité d'une façon sophistiquée de dire type de valeur. Le terme valeur fait référence à toute expression particulière prise en charge par un type valeur que vous choisissez d'utiliser.
+
+Remarque : les types de valeurs CSS ont tendance à être placés entre crochets ( <, >) pour les différencier des propriétés CSS. Par exemple, il existe une colorpropriété et un <color>type de données. Cela ne doit pas être confondu avec les éléments HTML, car ils utilisent également des crochets angulaires, mais c'est quelque chose à garder à l'esprit et que le contexte doit clarifier.
+
+Dans l'exemple suivant, nous avons défini la couleur de notre titre à l'aide d'un mot-clé, et le fond à l'aide de la rgb()fonction :
+
+CSS
+Copier dans le presse-papier
+
+h1 {
+  color: black;
+  background-color: rgb(197, 93, 161);
+}
+Un type de valeur en CSS est un moyen de définir une collection de valeurs autorisées. 
+Cela signifie que si vous considérez <color>comme valide, vous n'avez pas besoin de vous
+   demander lequel des différents types de valeur de couleur peut être utilisé : mots-clés, 
+   valeurs hexadécimales, rgb()fonctions, etc. Vous pouvez utiliser toutes les valeurs disponibles <color>,
+     en supposant qu'elles soient prises en charge par votre navigateur. . 
+     La page sur MDN pour chaque valeur vous donnera des informations sur 
+     la prise en charge du navigateur. Par exemple, si vous regardez la page, 
+     <color>vous verrez que la section de compatibilité du navigateur répertorie 
+      différents types de valeurs de couleur et leur prise en charge.
+
+Jetons un coup d'œil à certains types de valeurs et d'unités que vous pouvez fréquemment rencontrer,
+avec des exemples afin que vous puissiez essayer différentes valeurs possibles.
+
+Nombres, longueurs et pourcentages
+Il existe différents types de valeurs numériques que vous pourriez utiliser en CSS. 
+Les éléments suivants sont tous classés comme numériques :
+
+Type de données	Description
+<integer>	An <integer>est un nombre entier tel que 1024ou -55.
+<number>	A <number>représente un nombre décimal – il peut ou non 
+  avoir un point décimal avec une composante fractionnaire.
+   Par exemple, 0.255, 128, ou -1.2.
+<dimension>	A <dimension>est un <number>auquel est attachée une unité.
+   Par exemple, 45deg, 5s, ou 10px. <dimension>est une catégorie générique
+     qui comprend les types <length>, <angle>, <time>et <resolution> .
+<percentage>	A <percentage>représente une fraction d’une autre valeur. 
+  Par exemple, 50%. Les valeurs en pourcentage sont toujours relatives à une autre quantité.
+   Par exemple, la longueur d'un élément est relative à la longueur de son élément parent.
+Longueurs
+Le type numérique que vous rencontrerez le plus fréquemment est <length>. 
+  Par exemple, 10px(pixels) ou 30em. Il existe deux types de longueurs utilisées en CSS :
+   relative et absolue. Il est important de connaître la différence afin de comprendre 
+   l’ampleur que prendront les choses.
+
+Unités de longueur absolue
+Les unités suivantes sont toutes des unités de longueur absolue :
+ elles ne sont relatives à rien d'autre et sont généralement considérées comme ayant toujours la même taille.
+
+Unité	Nom	Équivalent à
+cm	Centimètres	1 cm = 37,8 px = 25,2/64 pouces
+mm	Millimètres	1 mm = 1/10ème de 1 cm
+Q	Quarts de millimètres	1Q = 1/40ème de 1 cm
+in	Pouces	1 pouce = 2,54 cm = 96 px
+pc	Picas	1 pièce = 1/6ème de 1 pouce
+pt	Points	1pt = 1/72ème de 1in
+px	Pixels	1px = 1/96ème de 1in
+La plupart de ces unités sont plus utiles lorsqu’elles sont utilisées pour 
+l’impression plutôt que pour la sortie à l’écran. Par exemple, nous n'utilisons 
+généralement pas cm(centimètres) à l'écran. La seule valeur que vous utiliserez couramment est px(pixels).
+
+Unités de longueur relative
+Les unités de longueur relative sont relatives à autre chose, peut-être à la 
+taille de la police de l'élément parent ou à la taille de la fenêtre.
+ L'avantage de l'utilisation d'unités relatives est qu'avec une planification minutieuse,
+  vous pouvez faire en sorte que la taille du texte ou d'autres éléments évolue par rapport 
+  à tout le reste de la page. Certaines des unités les plus utiles pour le développement Web 
+  sont répertoriées dans le tableau ci-dessous.
+
+Unité	Relatif à
+em	Taille de police du parent, dans le cas de propriétés typographiques telles que font-size,
+ et taille de police de l'élément lui-même, dans le cas d'autres propriétés telles que width.
+ex	hauteur x de la police de l'élément.
+ch	La mesure avancée (largeur) du glyphe "0" de la police de l'élément.
+rem	Taille de police de l'élément racine.
+lh	Hauteur de ligne de l'élément.
+rlh	Hauteur de ligne de l'élément racine. Lorsqu'il est utilisé sur les propriétés font-sizeou 
+line-heightde l'élément racine, il fait référence à la valeur initiale des propriétés.
+vw	1 % de la largeur de la fenêtre.
+vh	1 % de la hauteur de la fenêtre.
+vmin	1 % de la plus petite dimension de la fenêtre.
+vmax	1 % de la plus grande dimension de la fenêtre.
+vb	1 % de la taille du bloc contenant initial dans la direction de l' axe du bloc de l'élément racine .
+vi	1 % de la taille du bloc conteneur initial dans la direction de l' axe en ligne de l'élément racine .
+svw, svh	1 % de la largeur et de la hauteur de la petite fenêtre , respectivement.
+lvw, lvh	1 % de la largeur et de la hauteur de la grande fenêtre , respectivement.
+dvw, dvh	1 % de la largeur et de la hauteur de la fenêtre dynamique , respectivement.
+Explorer un exemple
+Dans l'exemple ci-dessous, vous pouvez voir comment se comportent certaines unités de longueur relative et absolue. La première case contient un widthensemble de pixels. En tant qu'unité absolue, cette largeur restera la même, quels que soient les autres changements.
+
+La deuxième zone a une largeur définie en vwunités (largeur de la fenêtre). 
+Cette valeur est relative à la largeur de la fenêtre, 
+et donc 10vw correspond à 10 pour cent de la largeur de la fenêtre.
+Si vous modifiez la largeur de la fenêtre de votre navigateur, 
+la taille de la boîte devrait changer. 
+Cependant, cet exemple est intégré à la page à l'aide d'un <iframe>, 
+  donc cela ne fonctionnera pas. Pour voir cela en action, vous devrez essayer
+   l'exemple après l'avoir ouvert dans son propre onglet de navigateur .
+
+La troisième case utilise emdes unités. Ceux-ci sont relatifs à la taille de la police. 
+J'ai défini une taille de police de 1emsur le contenant <div>, qui a une classe de .wrapper.
+   Modifiez cette valeur 1.5emet vous verrez que la taille de la police de tous les éléments 
+   augmente, mais seul le dernier élément deviendra plus large, car sa largeur est relative 
+   à cette taille de police.
+
+Après avoir suivi les instructions ci-dessus, essayez de jouer avec les valeurs d'une 
+autre manière pour voir ce que vous obtenez.
+
+
+ems et rems
+emet remsont les deux longueurs relatives que vous rencontrerez probablement le plus
+ fréquemment lors du dimensionnement de quoi que ce soit, des boîtes au texte. Cela vaut
+  la peine de comprendre comment ils fonctionnent et leurs différences, surtout lorsque 
+  vous commencez à aborder des sujets plus complexes comme le style du texte ou la mise 
+  en page CSS . L'exemple ci-dessous fournit une démonstration.
+
+Le code HTML illustré ci-dessous est un ensemble de listes imbriquées : nous avons
+ deux listes au total et les deux exemples ont le même code HTML. La seule différence 
+ est que le premier a une classe de ems et le second une classe de rems .
+
+Pour commencer, nous définissons 16px comme taille de police sur l' <html>élément.
+
+Pour récapituler, l'unité em signifie « la taille de police de mon élément parent »
+ dans le cas de la typographie. Les <li>éléments à l'intérieur du <ul>avec un classde
+   emsprennent leur dimensionnement auprès de leur parent. Ainsi, chaque niveau 
+   successif d'imbrication devient progressivement plus grand, à mesure que la
+    taille de police de chacun est définie sur 1.3em1,3 fois la taille de police 
+    de son parent.
+
+Pour récapituler, l'unité rem signifie "La taille de la police de l'élément racine"
+ (rem signifie "root em"). Les <li>éléments à l'intérieur du <ul>avec classa de 
+  remsprennent leur dimensionnement à partir de l'élément racine ( <html>). 
+    Cela signifie que chaque niveau successif d’imbrication ne continue pas à s’agrandir.
+
+Cependant, si vous modifiez l' <html>élément font-sizedans le CSS, vous verrez
+   que tout le reste change par rapport à lui - à la fois le texte remet emla taille.
+
+
+Pourcentages
+Dans de nombreux cas, un pourcentage est traité de la même 
+manière qu’une longueur. Le problème avec les pourcentages,
+ c'est qu'ils sont toujours définis par rapport à une autre 
+ valeur. Par exemple, si vous définissez un élément font-sizesous 
+ forme de pourcentage, ce sera un pourcentage de celui font-sizedu 
+ parent de l'élément. Si vous utilisez un pourcentage pour une widthvaleur, 
+ ce sera un pourcentage de celui widthdu parent.
+
+Dans l'exemple ci-dessous, les deux cases de taille en pourcentage 
+et les deux cases de taille en pixels ont les mêmes noms de classe. 
+Les ensembles mesurent respectivement 40 % et 200 px de large.
+
+La différence est que le deuxième ensemble de deux cases se trouve 
+à l’intérieur d’un emballage de 400 pixels de large. La deuxième 
+zone de 200 px de large a la même largeur que la première, 
+mais la deuxième zone de 40 % fait désormais 40 % de 400 px, 
+soit beaucoup plus étroite que la première !
+
+Essayez de modifier la largeur du wrapper ou la valeur
+ en pourcentage pour voir comment cela fonctionne.
+
+
+L'exemple suivant présente des tailles de police 
+définies en pourcentages. Chacun <li>a un font-sizede 80% ;
+   par conséquent, les éléments de liste imbriqués deviennent
+    progressivement plus petits à mesure qu'ils héritent de leur taille de leur parent.
+
+
+Notez que, même si de nombreux types de valeur acceptent 
+une longueur ou un pourcentage, certains n'acceptent que 
+la longueur. Vous pouvez voir quelles valeurs sont acceptées
+ sur les pages de référence des propriétés MDN. Si la valeur 
+ autorisée inclut <length-percentage>, vous pouvez utiliser une longueur ou un pourcentage. 
+  Si la valeur autorisée inclut uniquement <length>, il n'est pas possible d'utiliser un pourcentage.
+
+Nombres
+Certains types de valeur acceptent des nombres, sans qu’aucune unité ne leur soit ajoutée.
+ Un exemple de propriété qui accepte un nombre sans unité est la opacitypropriété qui contrôle 
+ l'opacité d'un élément (son degré de transparence). Cette propriété accepte un nombre compris 
+ entre 0(entièrement transparent) et 1(entièrement opaque).
+
+Dans l'exemple ci-dessous, essayez de modifier la valeur de opacityen différentes 
+valeurs décimales entre 0et 1et voyez comment la boîte et son contenu deviennent
+ plus ou moins opaques.
+
+
+Remarque : Lorsque vous utilisez un nombre en CSS comme valeur, il ne doit pas être 
+entouré de guillemets.
+
+Couleur
+Il existe de nombreuses façons de spécifier la couleur en CSS, dont certaines 
+sont implémentées plus récemment que d'autres. Les mêmes valeurs de couleur
+ peuvent être utilisées partout dans CSS, que vous spécifiiez la couleur du texte, 
+ la couleur d'arrière-plan ou autre.
+
+Le système de couleurs standard disponible sur les ordinateurs modernes prend
+ en charge les couleurs 24 bits, ce qui permet l'affichage d'environ 16,7
+  millions de couleurs distinctes via une combinaison de différents canaux rouge,
+   vert et bleu avec 256 valeurs différentes par canal (256 x 256 x 256 = 16 777 216). 
+   . Jetons un coup d'œil à quelques-unes des façons dont nous pouvons spécifier les couleurs en CSS.
+
+Remarque : Dans ce didacticiel, nous examinerons les méthodes courantes de spécification 
+des couleurs qui sont bien prises en charge par les navigateurs ; il y en a d'autres mais
+ ils ne bénéficient pas d'un aussi bon support et sont moins courants.
+
+Mots-clés de couleur
+Très souvent, dans les exemples ici dans la section d'apprentissage ou ailleurs sur MDN, 
+vous verrez les mots-clés de couleur utilisés, car ils constituent un moyen intuitif
+ de spécifier la couleur. Il existe un certain nombre de ces mots-clés, 
+ dont certains portent des noms assez amusants ! Vous pouvez voir une liste complète
+  sur la page pour le <color>type de valeur.
+
+Essayez de jouer avec différentes valeurs de couleur dans les exemples ci-dessous 
+pour avoir une meilleure idée de leur fonctionnement.
+
+
+Valeurs RVB hexadécimales
+Le prochain type de valeur de couleur que vous rencontrerez probablement est celui
+ des codes hexadécimaux. Chaque valeur hexadécimale se compose d'un symbole dièse 
+ (#) suivi de six nombres hexadécimaux, chacun pouvant prendre l'une des 16 valeurs 
+ comprises entre 0 et f (ce qui représente 15) — donc 0123456789abcdef. 
+ Chaque paire de valeurs représente l'un des canaux — rouge, 
+ vert et bleu — et nous permet de spécifier l'une des 256 valeurs disponibles pour chacun (16 x 16 = 256).
+
+Ces valeurs sont un peu plus complexes et moins faciles à comprendre,
+ mais elles sont beaucoup plus polyvalentes que les mots-clés 
+ : vous pouvez utiliser des valeurs hexadécimales pour représenter 
+ n'importe quelle couleur que vous souhaitez utiliser dans votre palette de couleurs.
+
+
+Encore une fois, essayez de modifier les valeurs pour voir comment les couleurs varient.
+
+Valeurs RVB et RVBA
+Le troisième schéma dont nous parlerons ici est le RVB. Une valeur RVB est une 
+fonction — rgb()— qui reçoit trois paramètres qui représentent les valeurs des canaux rouge, 
+vert et bleu des couleurs, à peu près de la même manière que les valeurs hexadécimales. 
+La différence avec RVB est que chaque canal n'est pas représenté par deux chiffres hexadécimaux, 
+mais par un nombre décimal compris entre 0 et 255 — un peu plus facile à comprendre.
+
+Réécrivons notre dernier exemple pour utiliser les couleurs RVB :
+
+
+Vous pouvez passer un quatrième paramètre à rgb(), qui représente le canal alpha de la 
+couleur, qui contrôle l'opacité. Si vous définissez cette valeur, 
+0la couleur sera entièrement transparente, alors 1qu'elle sera entièrement opaque.
+ Les valeurs intermédiaires vous offrent différents niveaux de transparence.
+
+Remarque : La définition d'un canal alpha sur une couleur présente une différence clé par 
+rapport à l'utilisation de la opacitypropriété que nous avons examinée précédemment.
+ Lorsque vous utilisez l'opacité, vous rendez l'élément et tout ce qu'il contient opaques, 
+ tandis que l'utilisation de RVB avec un paramètre alpha de couleurs ne rend opaque que la 
+ couleur que vous spécifiez.
+
+Dans l'exemple ci-dessous, nous avons ajouté une image d'arrière-plan au bloc conteneur
+de nos boîtes colorées. Nous avons ensuite défini les cases pour qu'elles aient des 
+valeurs d'opacité différentes - remarquez comment l'arrière-plan apparaît davantage lorsque
+ la valeur du canal alpha est plus petite.
+
+
+Dans cet exemple, essayez de modifier les valeurs du canal alpha pour voir comment cela 
+affecte la sortie couleur.
+
+Remarque : dans les anciennes versions de CSS, la rgb()syntaxe ne prenait pas en charge un 
+paramètre alpha – vous deviez utiliser une fonction différente appelée rgba()pour cela. De nos jours,
+ vous pouvez transmettre un paramètre alpha à rgb(), mais pour des raisons de 
+ compatibilité descendante avec les anciens sites Web, la rgba()syntaxe est toujours
+  prise en charge et a exactement le même comportement que rgb().
+
+Valeurs HSL et HSLA
+Une autre façon de spécifier les couleurs est le modèle de couleur HSL. Au lieu des valeurs de rouge,
+ vert et bleu, la hsl()fonction accepte les valeurs de teinte, de saturation et de luminosité,
+  qui sont utilisées pour distinguer les 16,7 millions de couleurs, mais d'une manière différente :
+
+Teinte : La nuance de base de la couleur. Cela prend une valeur comprise entre 0 et 360,
+ représentant les angles autour d'une roue chromatique .
+Saturation : Dans quelle mesure la couleur est-elle saturée ? Cela prend une valeur comprise 
+entre 0 et 100 %, où 0 correspond à aucune couleur (elle apparaîtra comme une nuance de gris)
+ et 100 % correspond à une saturation complète des couleurs.
+Luminosité : Dans quelle mesure la couleur est-elle claire ou brillante ? Cela prend 
+une valeur comprise entre 0 et 100 %, où 0 correspond à aucune lumière (elle apparaîtra complètement noire) 
+et 100 % à une pleine lumière (elle apparaîtra complètement blanche).
+Nous pouvons mettre à jour l'exemple RVB pour utiliser les couleurs HSL comme ceci :
+
+
+Tout comme avec, rgb()vous pouvez passer un paramètre alpha pour hsl()spécifier l'opacité :
+
+
+Remarque : dans les anciennes versions de CSS, la hsl()syntaxe ne prenait pas en charge
+ un paramètre alpha – vous deviez utiliser une fonction différente appelée hsla()pour cela.
+  De nos jours, vous pouvez transmettre un paramètre alpha à hsl(), mais pour des raisons 
+  de compatibilité descendante avec les anciens sites Web, la hsla()syntaxe est toujours
+   prise en charge et a exactement le même comportement que hsl().
+
+Vous pouvez utiliser n’importe laquelle de ces valeurs de couleur dans vos projets. 
+Il est probable que pour la plupart des projets, vous choisirez une palette de couleurs,
+ puis utiliserez ces couleurs – ainsi que la méthode choisie pour spécifier la couleur –
+  tout au long du projet. Vous pouvez mélanger et assortir les modèles de couleurs,
+   mais pour des raisons de cohérence, il est généralement préférable que l'ensemble
+    de votre projet utilise le même !
+
+Images
+Le <image>type valeur est utilisé partout où une image est une valeur valide.
+   Il peut s'agir d'un véritable fichier image pointé via une url()fonction ou d'un dégradé.
+
+Dans l'exemple ci-dessous, nous avons démontré une image et un dégradé utilisés 
+comme valeur pour la background-imagepropriété CSS.
+
+
+Remarque : Il existe d'autres valeurs possibles pour <image>, mais celles-ci
+   sont plus récentes et sont actuellement mal prises en charge par les navigateurs.
+    Consultez la page sur MDN pour le <image>type de données si vous souhaitez en savoir plus.
+
+Position
+Le <position>type valeur représente un ensemble de coordonnées 2D,
+   utilisé pour positionner un élément tel qu'une image d'arrière-plan (via background-position).
+    Il peut utiliser des mots-clés tels que top, left, bottom,
+     rightet centerpour aligner des éléments avec des limites
+      spécifiques d'une boîte 2D, ainsi que des longueurs qui 
+      représentent les décalages par rapport aux bords supérieur et gauche de la boîte.
+
+Une valeur de position typique se compose de deux valeurs : 
+la première définit la position horizontalement,
+ la seconde verticalement. Si vous spécifiez uniquement
+  des valeurs pour un axe, l'autre sera par défaut center.
+
+Dans l'exemple suivant, nous avons positionné une image
+ d'arrière-plan à 40 pixels du haut et à droite du conteneur à l'aide d'un mot-clé.
+
+
+Jouez avec ces valeurs pour voir comment vous pouvez déplacer l'image.
+
+Chaînes et identifiants
+Tout au long des exemples ci-dessus, nous avons vu des endroits où des mots-clés sont utilisés comme valeur (par exemple <color>des mots-clés comme red, black, rebeccapurpleet goldenrod). Ces mots-clés sont décrits plus précisément comme des identifiants , une valeur spéciale que CSS comprend. En tant que tels, ils ne sont pas cités — ils ne sont pas traités comme des chaînes.
+
+Il y a des endroits où vous utilisez des chaînes en CSS. Par exemple, lors de la spécification du contenu généré . Dans ce cas, la valeur est citée pour démontrer qu’il s’agit d’une chaîne. Dans l'exemple ci-dessous, nous utilisons des mots-clés de couleur non cités ainsi qu'une chaîne de contenu générée entre guillemets.
+
+
+Les fonctions
+En programmation, une fonction est un morceau de code qui effectue une tâche spécifique. Les fonctions sont utiles car vous pouvez écrire du code une fois, puis le réutiliser plusieurs fois au lieu d'écrire encore et encore la même logique. La plupart des langages de programmation prennent non seulement en charge des fonctions, mais sont également dotés de fonctions intégrées pratiques pour les tâches courantes afin que vous n'ayez pas à les écrire vous-même à partir de zéro.
+
+CSS possède également des fonctions , qui fonctionnent de la même manière que les fonctions d'autres langages. En fait, nous avons déjà vu des fonctions CSS dans la section Couleur ci-dessus avec les fonctions rgb()et hsl().
+
+En plus d'appliquer des couleurs, vous pouvez utiliser des fonctions CSS pour faire beaucoup d'autres choses. Par exemple, les fonctions de transformation sont un moyen courant de déplacer, faire pivoter et mettre à l'échelle des éléments sur une page. Vous pouvez voir translate()pour déplacer quelque chose horizontalement ou verticalement, rotate()pour faire pivoter quelque chose ou scale()pour agrandir ou réduire quelque chose.
+
+Fonctions mathématiques
+Lorsque vous créez des styles pour un projet, vous commencerez probablement par des nombres comme 300pxpour les longueurs ou 200msles durées. Si vous souhaitez que ces valeurs changent en fonction d'autres valeurs, vous devrez faire quelques calculs. Vous pouvez calculer le pourcentage d'une valeur ou ajouter un nombre à un autre nombre, puis mettre à jour votre CSS avec le résultat.
+
+CSS prend en charge les fonctions mathématiques , qui nous permettent d'effectuer des calculs au lieu de nous fier à des valeurs statiques ou de faire les calculs en JavaScript. L'une des fonctions mathématiques les plus courantes calc()vous permet d'effectuer des opérations telles que l'addition, la soustraction, la multiplication et la division.
+
+Par exemple, disons que nous souhaitons définir la largeur d'un élément à 20 % de son conteneur parent plus 100 px. Nous ne pouvons pas spécifier cette largeur avec une valeur statique — si le parent utilise une largeur en pourcentage (ou une unité relative comme ou em) rem, elle variera en fonction du contexte dans lequel il est utilisé et d'autres facteurs tels que l'appareil ou le navigateur de l'utilisateur. largeur de la fenêtre. Cependant, nous pouvons utiliser calc()pour définir la largeur de l'élément à 20 % de son conteneur parent plus 100 px. Les 20 % sont basés sur la largeur du conteneur parent ( .wrapper) et si cette largeur change, le calcul changera également :
+
+
+Il existe de nombreuses autres fonctions mathématiques que vous pouvez utiliser en CSS, telles que min(), max()et clamp(); respectivement, ceux-ci vous permettent de choisir la valeur la plus petite, la plus grande ou la moyenne parmi un ensemble de valeurs. Vous pouvez également utiliser des fonctions trigonométriques telles que sin(), cos()et tan()pour calculer les angles de rotation des éléments autour d'un point, ou choisir des couleurs qui prennent un angle de teinte comme paramètre. Les fonctions exponentielles peuvent également être utilisées pour les animations et les transitions, lorsque vous avez besoin d'un contrôle très spécifique sur la façon dont quelque chose bouge et ressemble.
+
+Connaître les fonctions CSS est utile pour les reconnaître lorsque vous les voyez. Vous devriez commencer à les expérimenter dans vos projets – ils vous aideront à éviter d’écrire du code personnalisé ou répétitif pour obtenir des résultats que vous pouvez obtenir avec du CSS classique.
+
+Testez vos compétences !
+Vous êtes arrivé à la fin de cet article, mais parvenez-vous à vous souvenir des informations les plus importantes ? Vous pouvez trouver d'autres tests pour vérifier que vous avez conservé ces informations avant de continuer — voir Testez vos compétences : valeurs et unités .
+
+Résumé
+Il s’agit d’un aperçu rapide des types de valeurs et d’unités les plus courants que vous pourriez rencontrer. Vous pouvez jeter un œil à tous les différents types sur la page de référence des valeurs et unités CSS – vous en rencontrerez beaucoup en cours d’utilisation au cours de ces leçons.
+
+L’élément clé à retenir est que chaque propriété a une liste définie de types de valeurs autorisés et que chaque type de valeur a une définition expliquant quelles sont les valeurs. Vous pouvez ensuite rechercher les détails ici sur MDN. Par exemple, comprendre que cela <image>permet également de créer un dégradé de couleurs est une connaissance utile mais peut-être non évidente à avoir !
+
+Dans le prochain article, nous verrons comment les éléments sont dimensionnés en CSS.
+
+Précédent
+Présentation : éléments de base
+Suivant
+Vous avez rencontré un problème de contenu avec cette page ?
+Modifiez la page sur GitHub .
+Signalez le problème de contenu .
+Consultez la source sur GitHub .
+Vous souhaitez vous impliquer davantage ? Apprenez à contribuer .
+Cette page a été modifiée pour la dernière fois le 6 septembre 2023par les contributeurs de MDN .
+
+
+
+
+
+Définition et utilisation
+La @mediarègle est utilisée dans les requêtes multimédias pour appliquer différents styles pour différents 
+types/périphériques multimédias.
+
+Les requêtes multimédias peuvent être utilisées pour vérifier de nombreuses choses, telles que :
+
+largeur et hauteur de la fenêtre
+largeur et hauteur de l'appareil
+orientation (la tablette/le téléphone est-il en mode paysage ou portrait ?)
+résolution
+L'utilisation de requêtes multimédias est une technique populaire pour fournir une feuille de style 
+sur mesure (conception Web réactive) aux ordinateurs de bureau, aux ordinateurs portables, 
+aux tablettes et aux téléphones mobiles.
+
+Vous pouvez également utiliser les requêtes multimédias pour spécifier que certains styles 
+sont uniquement destinés aux documents imprimés ou aux lecteurs d'écran (type de média : impression,
+ écran ou parole).
+
+En plus des types de médias, il existe également des fonctionnalités multimédias. Les fonctionnalités
+ multimédias fournissent des détails plus spécifiques aux requêtes multimédias, en permettant de tester
+  une fonctionnalité spécifique de l'agent utilisateur ou du périphérique d'affichage. Par exemple, 
+  vous pouvez appliquer des styles uniquement aux écrans dont la taille est supérieure ou inférieure
+   à une certaine largeur.
+
+
+
+  SYNTAX CSS @MEDIA:
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+signification des mots-clés not , only et et :
+
+not : le mot-clé not inverse le sens d’une requête multimédia entière.
+
+only : le mot-clé only empêche les anciens navigateurs qui ne prennent pas en charge
+ les requêtes multimédias avec des fonctionnalités multimédias d'appliquer les styles spécifiés.
+  Cela n'a aucun effet sur les navigateurs modernes.
+
+et : Le mot clé and combine une fonctionnalité multimédia avec un type de média ou d'autres
+ fonctionnalités multimédia.
+
+Ils sont tous facultatifs. Cependant, si vous utilisez not ou only , vous devez également 
+spécifier un type de média.
+
+Vous pouvez également avoir différentes feuilles de style pour différents médias, comme ceci :
+
+<link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+<link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css">
+....
+Plus d'exemples
+Exemple
+Masquer un élément lorsque la largeur du navigateur est de 600 px ou moins :
+
+@media screen and (max-width: 600px) {
+  div.example {
+    display: none;
+  }
+}
+Exemple
+Utilisez des médias queries pour définir la couleur d'arrière-plan sur lavande 
+si la fenêtre a une largeur de 800 pixels ou plus, sur vert clair si la fenêtre
+a une largeur comprise entre 400 et 799 pixels. Si la fenêtre est inférieure à 400 pixels, 
+la couleur d'arrière-plan est bleu clair :
+
+body {
+  background-color: lightblue;
+}
+@media screen and (min-width: 400px) {
+  body {
+    background-color: lightgreen;
+  }
+}
+@media screen and (min-width: 800px) {
+  body {
+    background-color: lavender;
+  }
+}
