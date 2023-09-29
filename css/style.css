@@ -80,7 +80,7 @@ position: absolute;
 .sub-menu{
     display: none;
     position: absolute;
-    width: 200px;
+    width: 150px;
 }
 .sub-menu li{
     display: block;
@@ -177,8 +177,16 @@ img{
     background-color: white;
  }
 
-form{
- 
+ form {
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
 }
 form .titre3{
     font-size: 20px;
@@ -193,6 +201,7 @@ form .corp-formulaire .boite{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 form .corp-formulaire .gauche .boite input{
     margin-top: 5px;
@@ -215,20 +224,11 @@ form .corp-formulaire .gauche .boite  i{
     color:#1F2039 ;
 
 } 
-form {
-    color: white;
-    padding: 30px;
-    border-radius: 10px;
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 0 auto;
-}
+
 form .corp-formulaire .droite{
     margin-left: 40px;
-
+    display: flex;
+    flex-wrap: wrap;
 }
 form .corp-formulaire .droite .boite textarea{
     margin-top: 5px;
