@@ -1,0 +1,43 @@
+a {
+    text-decoration: none;
+    color: #333;
+}
+nav{
+    background-color:white
+}
+.head{
+    display: flex;
+    justify-content: center;
+    
+ }
+header li {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+header li a{
+    display: block;
+    padding: 20px;
+}
+header li:hover a{
+    background-color: green;
+    color: white;
+  
+}
+header li:hover .sub-menu{
+display: block;
+position: absolute;
+}
+.sub-menu{
+    display: none;
+    position: absolute;
+    width: 77px;
+    
+}
+.sub-menu li{
+    display: block;
+}
+.sub-menu li:hover a{
+    background-color: white;
+    color: green;
+}

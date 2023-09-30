@@ -3,139 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/grid2.css">        
 </head>
 <body>
-    <header>
-        <nav class="head">
-            <ul>
-                <li>
-                    <a href="index.html" target="_blank" title="acceuil">acceuil</a>
-                </li>
-                <li>
-                    <a href="#" target="_blank" title="projet">projet</a>
-                    <ul class="sub-menu">
-                        <li>
-                            <a href="" target="_blank" title="qui je suis">ou je vis</a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank" title="qui je suis">qui je suis</a>
-                        </li>
-                        <li>
-                            <a href="index2.html" title="qui je suis">mais photo</a>
-                        </li>
-                        <li>
-                            <a href="contacte.html" target="_blank" title="mes coordone">laissez-moi vos coordoner</a>             
-                        </li>
-                    </ul>
-                </li>
-                
-            </ul>
-        </nav>     
-    </header>
-    
-    <div class="titre">
-        <h1>Mon porfolio</h1>
+    <div class="contener">
+        <header class="en-tete"> 
+            <nav class="head">
+                <ul>
+                    <li>
+                        <a href="index.html" title="acceuil">acceuil</a>
+                    </li>
+                    <li>
+                        <a href="#projet"  title="projet">projet</a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="#moi"  title="qui je suis">moi</a>
+                            </li>
+                            <li>
+                                <a href="#projet" title="qui je suis">projet</a>
+                            </li>
+                            <li>
+                                <a href="#contact" title="mes coordone">contact</a>             
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    <article class="moi">
-        <img src="portrait " alt="">
-        <p>
-            <h2 class="presente">Qui suis-je</h2>
-            Bonjours a tous , je me présente Aurélien j'ai 25ans , j'ai travailler  dans les domaine suivant:
-            <br>
-            <ul class="mais-boulot">
-                <li>Annimation dans les ecoles primaire et martenelle mais egalement en colonie de vacance</li>
-                <li>en mecanique automobile</li>
-                <li>mais egalement dans un lidle en employer polyvalent</li>
-            </ul>
-            <br>    
-            je me suis tourné vers l'informatique car j'ai un but a accomplire , oui je suis un jeune chretien et
-            j'ai un projet a elabore , j'aurai meme dit un but final a accomplire.    
-        </p>
-    </article>
-    <article class="passion">
-        <div class="projet">
-            <img  class="mecaimg" src="/img/MECANIQUE.jpg" alt="animation">
-            <h2>mecanique</h2>
-            <p>
-                j'ai ettait aprentie mecanique en alternance pendant 1 ans
-                mais ce n'était pas mon avenir,j'ai appris les base
-                le fonctionement d'un moter et egalement et a fair des revisons ;
-                changer les pneux,control de base sur vehicul,
-                j'ai travailler chez renault a guyencour.
-            </p>
-        </div> 
-        <div class="projet">
-            <img class="mecaimg"src="/img/animation.jpg" alt="jouet">
-            <h2>Animation</h2>
-            <p>J'ai etait animateur pendant 2 ans sa était vraiment un bonnheur,
-                toujour un plaisir de s'occuper des enfant,fair des activité 
-                sportif ou manuel,j'ai aussi fait des colonie de vacance,
-                j'ai travailler avec des efant et des ados (2 a 17 ans)
-            </p>
-        </div>
-    </article>
-    <article class="haut">
-        <h1>Mais photo</h1>
-    </article>
-    <div class="wrapper"> 
-        <div class="image">
-            <img class="redim" src="/img/loup.jpeg" alt="loup" >
-            <div class="content">
-                <h4>image over flow</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, </p>
+    <div class="conteneur">
+        <main class="page">
+            <div class="titre">
+                <h1>Mon porfolio</h1>
             </div>
-        </div>
-        <div class="image">
-            <img class="redim" src="/img/aigle.jpg" alt="loup" >
-            <div class="content">
-                <h4>image over flow</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, </p>
-            </div>
-        </div>
-        <div class="image">
-            <img class="redim"  src="/img/R.jpg" alt="loup" >
-            <div class="content">
-                <h4>html/css</h4>
-                <p>Mon but et de creé un site reconnue </p>
-            </div>
-        </div>
-      </div>
-    <form>
-    <h3 class="titre3">Contactez-moi</h3>
-    <div class="separation"></div>
-    <div class="corp-formulaire">
-        <div class="gauche">
-            <div class="boite">
-                <label>votre prenom</label>
-                <input type="text">
-                <i class="fa-sharp fa-solid fa-user"></i>
-            </div>
-            <div class="boite">  
-                <label>votre adresse mail</label>
-                <input type="text">
-                <i class="fa-solid fa-at"></i>
-            </div>
-            <div class="boite">  
-                <label>votre téléphone</label>
-                <input type="text">
-                <i class="fa-sharp fa-solid fa-phone"></i>
-            </div>   
-        </div>
-        <div class="droite">
-            <div class="boite">
-                <label>message</label>
-                <textarea></textarea>
-            </div>
+            <a name="moi"></a>
+            <article class="moi">
+                <div class="projet">
+                    <img class="mecaimg" src="/img/portrait3.jpg" alt="moi" width="200px">
+                    <h2 >Qui suis-je</h2>
+                    <p>
+                        Bonjours a tous , je me présente Aurélien j'ai 25ans , j'ai travailler  dans les domaine suivant:
+                        <ul class="">
+                            <li>Annimation dans les ecoles primaire et martenelle mais egalement en colonie de vacance</li>
+                            <li>en mecanique automobile</li>
+                            <li>mais egalement dans un lidle en employer polyvalent</li>
+                        </ul>
+                        je me suis tourné vers l'informatique car j'ai un but a accomplire , oui je suis un jeune chretien et
+                        j'ai un projet a elabore , j'aurai meme dit un but final a accomplire.
+                        je suis ambitieux et je vais tout metre en oeuvre pour reussire.
+                        duran mon parcours j'ai fait des singeris toute ma vie 
+                        maintenant il est temps pour moi de construire un avenenir solid
+                        j'ai eu la grace d'avoir etait sauve par le Seigneur Jésus-Christ
+                        c'est par son amour et l'Esprit du pére que j'ai etait sauve et que j'ai change de vie.
+                    </p>
+                </div>
+            </article>
+        </main>
+    </div>
+   
+    <a name="projet"></a>
+    <div class="contener">
+        <h2 class="m1">Mais projets</h2>
+        <div class="projet2">
+            <section class="moi">
+                <div class="image">
+                    <img src="/img/images (1).jpg" alt="loup" >
+                    <div class="content">
+                        <h4>HTML CSS</h4>
+                        <p>mon but et de creé un site reconnue a l'international</p>
+                    </div>
+                </div>
+            </section>
+            <section class="moi">
+                <div class="image">
+                    <img src="/img/bible.jpeg" alt="loup" height="200px">
+                    <div class="content">
+                        <h4>l'évangile</h4>
+                        <p>l'évangile dois etre repandu !</p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
-    <div class="pied-formulaire">
-        <button>Envoyer</button>
+    <a name="contact"></a>
+       <div class="contener">
+        <div>
+            <form>
+                <h3 class="titre3">Contactez-moi</h3>
+                <div class="separation"></div>
+                <div class="corp-formulaire">
+                    <div class="gauche">
+                        <div class="boite">
+                            <label>votre prenom</label>
+                            <input type="text">
+                            <i class="fa-sharp fa-solid fa-user"></i>
+                        </div>
+                    <div class="boite">  
+                        <label>votre adresse mail</label>
+                        <input type="text">
+                        <i class="fa-solid fa-at"></i>
+                    </div>
+                    <div class="boite">  
+                        <label>votre téléphone</label>
+                        <input type="text">
+                        <i class="fa-sharp fa-solid fa-phone"></i>
+                    </div>   
+                </div>
+                <div class="droite">
+                    <div class="boite">
+                        <label>message</label>
+                        <textarea></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="pied-formulaire">
+                <button>Envoyer</button>
+            </div>
+            </form>
+        </div>
     </div>
-</form>
     <footer>
         <div class="bas">
             <p>@2023-2024</p>
@@ -144,3 +130,4 @@
     </footer>
 </body>
 </html>
+  

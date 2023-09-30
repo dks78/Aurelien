@@ -1,0 +1,62 @@
+.projet2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+form .titre3{
+    font-size: 20px;
+}
+form .corp-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+form .corp-formulaire .boite{
+    position: relative;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+form .corp-formulaire .gauche .boite input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid blue;
+    outline-color: red;
+    border-radius: 5px;
+}
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: violet;
+}
+form .corp-formulaire .gauche .boite  i{
+    position: absolute;
+    left: 0px;
+    top: 25px;
+    padding: 9px 8px;
+    color:#1F2039 ;
+} 
+form {
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+form .corp-formulaire .droite{
+    margin-left: 40px;
+}
+form .corp-formulaire .droite .boite textarea{
+    margin-top: 5px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    resize: none;
+}
+body{
+    background-color: black;
+}
