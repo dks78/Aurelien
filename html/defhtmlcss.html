@@ -1003,4 +1003,24 @@ body {
   body {
     background-color: lavender;
   }
+
+
+
+
+
+  
+}.header .menu .menu_liste .menu_burger a:after{ 
+  content: ""; /**/
+  height: 3px;
+  background-color: rgb(6, 71, 221);
+  width: 0%;
+  position: absolute;/*Corespond a une distance parcourrue en fonction de la possition d'origine , */
+  bottom: 0;
+  right : 0;
+  color: blue;
+  transition: 1s all ease-in-out;
+}
+.header .menu .menu_liste .menu_burger a:hover:after{
+  width: 100%;
+  left: 0;
 }

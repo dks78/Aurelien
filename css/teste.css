@@ -1,0 +1,145 @@
+@media screen and (max-width: 575.98px) { 
+    .contener{
+       grid-template-columns: 1fr;
+    }
+    
+    header , main ,footer {
+       grid-column: 1/2;
+    
+    }  
+}
+@media  (min-width: 576px) and  (max-width: 767.98px) { 
+   .contener{
+       grid-template-columns: 1fr 1fr ;
+    }
+    header , main ,footer{
+       grid-column: 1/3;
+        }
+}
+@media   (min-width: 768px) and (max-width: 991.98px){
+   .contener{
+       grid-template-columns: 1fr 1fr 1fr;
+    }
+    header , main ,footer{
+       grid-column: 1/4;
+        }        
+}
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+   .contener{
+       grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    header , main ,footer{
+       grid-column: 1/5;
+        }
+}
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+   .contener{
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    header , main ,footer {
+       grid-column: 1/6;
+        }
+}
+@media (min-width: 1400px) { 
+   .contener{
+       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    header , main ,footer {
+       grid-column: 1/6;
+        }
+}
+.contener{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 60% 25%;
+ 
+}
+header , main ,footer{
+grid-column: 1/2;
+}
+header{
+    grid-row: 1/2;
+}
+main{
+    grid-row:2/3;
+}
+footer{
+    grid-row: 2/3;
+}
+
+/* menu header*/
+.header {
+    width: 100%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .logo img{
+    max-height: 50px;
+}
+.header .menu .menu_liste{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    align-items: center ;
+    font-size: 30px;
+}
+.header .menu .menu_liste .menu_burger{
+    margin-right: 12px;
+}
+.header .menu .menu_liste .menu_burger:last-of-type{
+    margin-right: 100px;
+}
+.header .menu .menu_liste .menu_burger a{
+    color: black;
+    font-style: italic;
+    font-weight: 900; /* permet de donne plus de gras au mot */
+    text-decoration: none;  /* permet de d'ésactiver le soulignement par defaut de lien , desactive la décoration par defaut */
+    position: relative;
+}
+ /* ::after crée un pseudo-élément qui sera le dernier enfant de l'élément sélectionné.
+  Il est souvent utilisé pour ajouter du contenu cosmétique à un élément, en utilisant la propriété CSS content. */
+.header .menu .menu_liste .menu_burger a:after{ 
+    content: ""; /**/
+    height: 3px;
+    background-color: rgb(6, 71, 221);
+    width: 0%;
+    position: absolute;/*Corespond a une distance parcourrue en fonction de la possition d'origine , */
+    bottom: 0;
+    right : 0;
+    color: blue;
+    transition: 1s all ease-in-out;
+}
+.header .menu .menu_liste .menu_burger a:hover:after{
+    width: 100%;
+    left: 0;
+}
+/* fin menu header  */
+
+body{
+    background-image: url(/img/stacey-koenitz-kSY5T6js2KE-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+ }
+ /* titre principale de la page  */
+h1{
+    padding: 100px;
+   text-align: center;
+   font-size: 50px;
+   font-style: italic;
+}
+ /* fin de  titre principale de la page  */
+ .page1{
+    display: flex;
+    justify-content: center;
+    padding: 500px;
+    background-color: blue;
+ }
